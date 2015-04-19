@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<link rel="stylesheet" type="text/css" href="mm.css">
+
+<title>MultiMona</title>
+</head>
+<body>
+<h1>MultiMona</h1>
+
+<div class="para">
+
+<div class="right">
+<a href="index.en.html">English</a>
+</div>
+
+MultiMona（マルチモナー）は暗号通貨モナーコイン用の軽量クライアントです。<br>
+BitCoinクライアントのMultiBitおよびDogecoin用のMultiDogeから派生しました。<br>
+軽量クライアントは自身に必要な情報のみを取得するため、同期が高速であり、ディスク容量も節約できます。<br>
+また、複数ウォレット、通貨換算表示、QRコード表示などの特徴があります。<br>
+<br>
+
+<a href="multimona_ss.png"><img src="multimona_ss.png" width="600" ></a><br>
+<br>
+<div class="social_buttons">
+<script src="http://multimona.sv73.net/cw/coin.js"></script>
+<script>
+CoinWidgetCom.go({
+        wallet_address: "MRePiFqXTxc1CgQ3v4f2eKy1SyJ3f21v71"
+        , currency: "monacoin"
+        , counter: "count"
+        , alignment: "al"
+        , qrcode: true
+        , auto_show: false
+        , lbl_button: "寄付する"
+        , lbl_address: "このアドレスにMonacoinを寄付する:"
+        , lbl_count: "回の寄付"
+        , lbl_amount: "MONA"
+        });
+</script>
+</div>
+
+</div>
+<h2>ダウンロード</h2>
+<div class="para">
+古いバージョンからの更新時に、同期が進まなくなる場合があります。メニューの「ツール | ブロックチェインおよび取引をリセットする」を実行することにより復旧できます。お手数をお掛けしますがよろしくお願い致します。<br>
+<br>
+
+現在のバージョン:0.2.6<br>
+<a href="https://github.com/monapu/multimona/releases/download/mona-v0.2.6/multimona-0.2.6-windows-setup.exe">Windows</a> 8.9MB (<a href="checksums/multimona-0.2.6-windows-setup.exe.sha1">sha1sum</a>)<br>
+<a href="https://github.com/monapu/multimona/releases/download/mona-v0.2.6/multimona-0.2.6-mac.dmg">Mac</a> 7.5MB (<a href="checksums/multimona-0.2.6-mac.dmg.sha1">sha1sum</a>)<br>
+<a href="https://github.com/monapu/multimona/releases/download/mona-v0.2.6/multimona-0.2.6-linux.jar">Linux</a> 8.1MB (<a href="checksums/multimona-0.2.6-linux.jar.sha1">sha1sum</a>)
+<br><br>
+
+<a href="https://github.com/monapu/multimona/releases">開発版、旧バージョンなど</a><br>
+<a href="https://github.com/monapu/multimona">ソースコード</a><br>
+<a href="https://github.com/monapu/monacoinj-multibit">ソースコード(monacoinj-multibitライブラリ)</a>
+<br>
+</div>
+<h2>最近の更新</h2>
+<div class="para">
+
+<h3>0.2.6 [2015-03-05]</h3>
+<ul>
+<li>allcoin.comの価格表示が正しくない場合があった問題を修正</li>
+</ul>
+
+<h3>0.2.5 [2015-01-16]</h3>
+<ul>
+<li>ノード検索方法のさらなる調整</li>
+</ul>
+
+<h3>0.2.4 [2015-01-15]</h3>
+<ul>
+<li>ノード検索方法の修正</li>
+</ul>
+
+</div>
+
+<h2>ヘルプ</h2>
+<div class="para">
+MultiMonaのオンラインヘルプと同じものです。<br>
+<a href="help/en/v0.2/help_contents.html">HELP(英語)</a><br>
+<a href="help/ja/v0.2/help_contents.html">日本語ヘルプ(翻訳作業中)</a><br>
+</div>
+<h2>既知の問題、制限など</h2>
+<div class="para">
+<ul>
+<li>多数の取引を(たて続けに？)受信した後で、同期が進まなくなることがある。</li>
+<br>
+軽量ウォレットに共通の問題のようです。このケースではmultimonaを再起動させることで同期を再開できます。プール等から頻繁に入金するような場合には、ご注意ください。<br>参考：<a href="https://github.com/langerhans/multidoge/issues/19">multidoge hang during synchro</a><br>
+<br>
+
+<li>複数ウォレットを開いている場合、起動時に再同期が発生するときがある。</li>
+<br>
+軽量ウォレットの制約のようです。<br>
+<br>
+
+<li>通貨ティッカーで直近(last)が表示されない取引所がある</li>
+APIで直近値を提供していない場合、通貨換算は現在のbidで計算されます。<br>
+<br>
+
+<li>Linuxでトレイアイコンの透過部分がおかしい</li>
+<li>OpenJDKで正常に動作しない</li>
+
+</ul>
+
+<br>
+
+</div>
+
+</body></html>

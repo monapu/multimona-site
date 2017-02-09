@@ -1,3 +1,3 @@
-0.2.11
+0.2.10
 Multimonaは開発終了しました。他のウォレットへの移行を検討してください。Multimona development has ended.
 
